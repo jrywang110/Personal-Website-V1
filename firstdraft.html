@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.homepage {
+			height: 90%;
+		}
+
+		.container {
+			box-sizing: border-box;
+			width: 50%;
+			height: 700px;
+			display: inline-block;
+			text-align: center;
+		}
+
+		#picture {
+			background: url(picture.jpg);
+			filter: grayscale(50%);
+			background-size: cover;
+			float: left;
+			background-position: center center;
+		}
+
+		#content {
+			background: #fffafa;
+			float: right;
+			position: relative;
+			padding: 3px;
+		}
+
+		html, body {
+		    height: 100%;
+		    margin:0;
+    		padding:0;
+		}
+
+		@media only screen and (max-width:760px) {
+			.container {
+				width: 100%;
+				height: 500px;
+			}
+		} 	
+
+		p { 
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 20px; 
+			font-style: normal; 
+			font-variant: normal; 
+			font-weight: 400; 
+			line-height: 20px; 
+		}
+
+		.box {
+		  	max-width: 450px; 
+		  	width: 90%;
+		  	height: 225px;
+		  	background: azure;
+
+		  	border: solid;
+			border-width: 1px;
+			border-color: black; 
+
+			margin: 0 auto;
+			box-shadow: 8px 10px 10px 8px rgba(0,0,0, .2);
+			border-radius: 15px;
+
+			display: flex;
+			justify-content: center;
+			align-content: center;
+		    flex-direction: column;
+
+			position: absolute;
+  			top: 50%; left: 50%;
+  			transform: translate(-50%,-50%);
+
+		}
+	</style>
+	<title>Jerry's Website</title>
+</head>
+<body>
+	<!--Standard Nav Bar -->
+	<div class="nav">
+		<a href="index.html" id="name"> Jerry Wang </a>
+		<a href="index.html">Projects</a>
+		<a href="documentation.html">Resume</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<!--Content -->
+	<div class="homepage">
+		<div class="container" id="picture">
+		</div>
+		<div class="container" id="content">
+			<center>
+				<div class="box"> 
+					<h1>Hi! I'm Jerry. </h1><br> I'm currently a rising junior at Tufts University studying computer science and mathematics. I love coding and solving problems. I am working on both my front-end and back-end skills right now.
+				</div>
+			</center>
+		</div>
+	</div>
+</body>
+</html>

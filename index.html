@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	</style>
+	<title>Jerry's Website</title>
+</head>
+<body>
+	<!-- home screen -->
+	<header>
+		<h1 id="name"> JERRY WANG  </h1>
+		<div class="line" id="line1"></div>
+		<p id="occ"> Aspiring Software Engineer </p>
+	</header>
+	<!-- nav bar -->
+	<div class="nav" id="navbar">
+		<a> About Me </a>
+		<a>Resume</a>
+		<a>Projects</a>
+		<a>Contact</a>
+	</div>
+	<!-- about me --> 
+	<div class="outline" id="slide1">
+		<div class="title"> 
+			<h1> An Introduction </h1>
+		</div> 
+		<div class="aboutme">
+			<img src="picture.jpg" id="aboutpic" alt="My Senior Picture">
+			<div class="infobox"> 
+				<center>
+					<h1> Hi and Welcome! </h1> 
+				</center>
+				I'm Jerry! Here are a few things you should know about me:
+					<ul>
+						<li>I live in Winchester, MA.</li>
+						<li>I'm a rising junior at Tufts University studying Computer Science and Mathematics.</li>
+						<li>I'm currently looking for a software engineering internship/opportunity this coming summer.</li>
+					</ul>
+				<center>
+					<h1> Hobbies/Interests</h1> 
+				</center>
+				Outside of programming, I spend my time doing the following:
+					<ul>
+						<li>Ultimate frisbee. I play both in college and club at a high level!</li>
+						<li>Board Games. Some of my favorites include Catan and Innovation!</li>
+						<li>Video Games. Recently, I have been playing Apex Legends and Rocket League.</li>
+				    </ul>
+			</div>
+		</div>
+	</div>
+	<div class="outline" id="slide2">
+		<div class="title"> 
+			<h1> Skills </h1>
+		</div>  
+		<div class="flexbox"> 
+			Proficient Languages:
+			<div class="flexbox" id="flexcircles"> 
+				<div class="circle">C++</div>
+				<div class="circle">Javascript</div>
+				<div class="circle">HTML/CSS</div>
+			</div>
+		</div>
+		<div class="flexbox">
+			<center>
+				Other languages/technologies I have exposure to / worked with:
+			</center>
+			<div class="grid"> 
+				<div class="circle">jQuery</div>
+				<div class="circle">Node.js</div>
+				<div class="circle">MongoDB</div>
+				<div class="circle">SQL</div>
+				<div class="circle">APIs</div>
+				<div class="circle">MATLAB</div>
+				<div class="circle">Excel</div>
+				<div class="circle">Salesforce</div>
+			</div>
+		</div>
+	</div>
+	<div class="outline" id="slide3">
+		<div class="title"> 
+			<h1> Education </h1>
+		</div>  
+		<div class="aboutme" id="education">
+			<center>
+				<h1><b>Tufts University </b></h1>
+				<p>Majors: Computer Science and Mathematics </p>
+				<div class="coursework"> 
+					Relevant Coursework: 
+					<div class='minicircle'></div>
+					(Computer Science), 
+					<div class='minicircle' id="math"></div>
+					(Mathematics)
+				</div>
+				<div class="grid" id="courses">
+					<div class="rectanglecs"> Data Structures </div>
+					<div class="rectanglecs"> Algorithms </div>
+					<div class="rectanglecs"> Web Programming </div>
+					<div class="rectangle"> Mathematical Modeling </div>
+					<div class="rectangle"> Probability </div>
+					<div class="rectangle"> Combinatorics </div>
+					<div class="rectangle"> Real Analysis 1 </div>
+				</div>
+				<div class="GradGPA">
+					<p> Expected Graduation: 06/2022 </p>
+					<p> Current GPA: 3.84/4.00 </p>
+				</div>
+			<center>
+		</div>
+	</div>
+	<div class="outline" id="slide4">
+		<div class="title"> 
+			<h1> Resume </h1>
+		</div> 
+		<center>
+			<p>Click below for a PDF of my resume!</p>
+			<div class="button"><a href="Resume.pdf" target="_blank" download>Download</a></div>
+		</center>
+	</div>
+	<div class="outline" id="slide5">
+		<div class="title"> 
+			<h1> Get in Touch! </h1>
+		</div> 
+		<center>
+			<p> If you're interested in talking, click below and shoot me an email! <br> I'll get back to you promptly.</p>
+		</center>
+		<div class="button"><a href="mailto:jerrywangwebsite@gmail.com">Contact Me</a></div>
+	</div>
+	<!-- sticky nav bar --> 
+	<script type="text/javascript">
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+</body>
+</html>

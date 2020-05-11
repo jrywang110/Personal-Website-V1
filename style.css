@@ -1,0 +1,441 @@
+/* header styling */
+header {
+  background-image: url(coverpage.jpg);
+  background-position: center center;
+  height: 100vh;
+  background-size: cover;
+  position: relative; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+#name {
+  font-size: 10vh;
+  font-family: "Lucida Console", Courier, monospace;
+  text-decoration: none;
+  color: black;
+}
+
+#occ { 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5vh; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 400; 
+}
+
+.line {
+  width: 40vh;
+  height: 1vh;
+  border-bottom: 1px solid black;
+  position: absolute;
+}
+
+/* ---------------------- end header styling ----------------------------------- */
+
+/* NAV BAR RULES */
+.nav {
+  overflow: hidden;
+  background-color: #fffafa;
+  height: 80px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  text-align: center;
+}
+
+.nav a {
+  height: 100%;
+  float: middle;
+  font-size: 25px;
+  color: orange;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  text-decoration: none;
+  font-family: "Lucida Console", Courier, monospace;
+  list-style: none;
+  display: inline-block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .outline {
+  padding-top: 120px;
+}
+
+/* ---------------------- end navbar styling ----------------------------------- */
+
+/*-- responsiveness of nav and picture --*/
+@media screen and (max-height: 200px) {
+    #name {
+      font-size: 20px;
+    }
+    #occ {
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+  .nav a {
+    font-size: 20px;
+    padding: 30px 30px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .nav a {
+    font-size: 15px;
+  }
+  .nav {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav a {
+    font-size: 12px;
+  }
+  .nav {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outline {
+    width: 100%;
+  }
+  .aboutme {
+    flex-direction: column !important; 
+  }
+  #slide1 {
+    height: 1100px;
+  }
+  #slide2{
+    height: 900px;
+  }
+}
+
+/* ---------------------- end responsiveness styling ----------------------------------- */
+
+/* content styling */
+.outline {
+  display: flex;
+  flex-direction: column;
+/*  justify-content: center;*/
+  align-items: center;
+
+/*  height: 700px;
+  max-width: 100%;*/
+  height:700px;
+
+  background-color: #FEFEFE;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+/*  border: solid black 2px;*/
+}
+
+.title {
+  height: 80px;
+  border-bottom: solid 2px orange;
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 40px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+
+  margin-top: 25px;
+}
+
+#aboutpic {
+  height: 470px;
+  margin-bottom: 10px;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height:468px;
+  max-width: 600px;
+
+
+  border: solid;
+
+  margin-left: 50px;
+  margin-right: 50px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  text-align: left;
+
+  overflow: scroll;
+}
+
+.infobox h1 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 22px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  text-align: center;
+}
+
+.infobox p {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  text-align: left;
+}
+
+ul li {
+  font-size: 16px;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+#slide2 {
+  background: #F3F3F3
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width:1000px;
+  margin-top: 40px;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+}
+
+#flexcircles {
+  flex-direction: row;
+  max-width:550px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 120px;
+  text-align: center;
+  background: #000;
+  margin-bottom: 5px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.minicircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: green;
+
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#math {
+  background: black;
+}
+
+.rectangle {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background: black;
+  color: white;
+  margin-bottom:5px;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.rectanglecs {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  background: green;
+  color: white;
+  margin-bottom:5px;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 580px;
+
+  margin-top:40px;
+}
+
+#courses {
+  max-width: 650px;
+}
+
+#slide3 {
+  height: 620px;
+}
+
+#education h1 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 28px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 400; 
+  text-align: center;
+}
+
+#education p {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 20px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  text-align: center;
+}
+
+.GradGPA {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  max-width: 650px;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+
+  margin-top: 10px;
+/*  margin-right: 10px;
+  margin-left: 10px;*/
+}
+
+.coursework {
+  display: flex;
+  flex-direction: row;
+  max-width: 750px;
+
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 20px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  text-align: center;
+}
+
+#slide4 {
+  background: #F3F3F3;
+  height:325px;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10;
+}
+
+#slide5 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10;
+}
+
+.button {
+  background-color: black; 
+  border: solid black 1px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  height:40px;
+  line-height: 40px;
+
+  margin-top: 30px;
+
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+}
+
+.button a {
+  color: white;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 30px; 
+  font-style: normal;  
+  font-variant: normal; 
+  font-weight: 10; 
+  display: block;
+}
+
+.button:hover {
+  background: green;
+  cursor: pointer;
+}
+
+#slide5 {
+  height: 400px;
+}
+/* ---------------------- end content styling ----------------------------------- */
+
+
